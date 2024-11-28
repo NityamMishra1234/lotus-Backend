@@ -9,7 +9,8 @@ import connectDB from "./db/index.js"
 
 const app = express()
 const corsOptions = {
-  origin: 'http://localhost:5173',  // Frontend URL
+  origin: 'https://gcs-weld.vercel.app', 
+    // Frontend URL
   methods: 'GET,POST', // Specify allowed methods
   allowedHeaders: 'Content-Type,Authorization', // Specify allowed headers
 };
