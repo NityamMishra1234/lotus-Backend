@@ -9,7 +9,7 @@ import connectDB from "./db/index.js"
 
 const app = express()
 const corsOptions = {
-  origin: 'https://gcs-weld.vercel.app', 
+  origin: "*", 
     // Frontend URL
   methods: 'GET,POST', // Specify allowed methods
   allowedHeaders: 'Content-Type,Authorization', // Specify allowed headers
@@ -21,6 +21,8 @@ app.use(cors(corsOptions))
 app.use(bodyParser.json());
 
 connectDB()
+
+
 
 app.post('/users', async (req, res) => {
     const { name, email, number } = req.body;
