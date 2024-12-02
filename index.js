@@ -9,7 +9,7 @@ import connectDB from "./db/index.js"
 
 const app = express()
 const corsOptions = {
-  origin: "*", 
+  origin: "https://lotus-green.vercel.app/", 
     // Frontend URL
   methods: 'GET,POST', // Specify allowed methods
   allowedHeaders: 'Content-Type,Authorization', // Specify allowed headers
